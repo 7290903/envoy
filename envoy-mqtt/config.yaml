@@ -1,14 +1,19 @@
+
 name: Envoy MQTT Proxy
+description: Envoy TCP proxy for MQTT
 version: "1.0.0"
 slug: envoy-mqtt
-description: Envoy TCP proxy for MQTT failover
 url: https://github.com/7290903/envoy/tree/main/envoy-mqtt
+init: false
 startup: services
 boot: auto
 host_network: true
 privileged: true
-schema: {}
+ingress: false
+panel_icon: mdi:cloud
+panel_title: Envoy Proxy
 arch:
   - amd64
   - aarch64
   - armv7
+schema: {}
